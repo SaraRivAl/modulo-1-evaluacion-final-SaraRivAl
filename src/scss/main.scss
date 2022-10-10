@@ -19,7 +19,7 @@
 :root {
 $colororange: #f26002;
 $colorblack: black;
-$font:'Roboto', sans-serif;
+$font-family: 'Roboto', sans-serif;
 $colorwhite:white;
 $cologrey: #4a4a4a;
 $colorblue:#8ccbea;
@@ -45,28 +45,99 @@ $colorblue:#8ccbea;
     align-items: flex-start;
     
         &__littlep {
-            font-family:$font;
+            font-family:$font-family;
             font-size: 1.4rem;
             color: $colorblue;
             text-transform: capitalize;
        
         }
         &__h3 {
-            font-family: $font;
+            font-family: $font-family;
             font-size: 2.4rem;
             color:$colorblack;
             text-transform:capitalize;
         }
 
         &__p {
-            font-family: $font;
+            font-family: $font-family;
             font-size: 1.8rem;
             color:$cologrey;
             
         }
         &__buttongo {
             border-radius: 25px;
+            font-size:2rem;
             border-color: $colororange;
             color: $colororange;
+            padding: 10px 25px 10px 25px;
+            text-decoration: none;
         }
+}
+
+.threereasons {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,1fr)
+
+    &__h3 {
+        font-size: 2.4rem;
+        font-family: $font-family;
+        color: $colorblack
+    }
+    &__reason1 {
+
+    }
+        &--h4 {
+            font-size: 1.8rem;
+            font-family: $font-family;
+            color: $colorblack;
+        }
+        &--p {
+            font-size: 1.8 rem;
+            font-family: $font-family;
+            color: $colorblack;
+            
+        }
+
+    &__reason2 {
+
+        }
+            &--h4 {
+                font-size: 1.8rem;
+                font-family: $font-family;
+                color: $colorblack;
+            }
+            &--p {
+                font-size: 1.8 rem;
+                font-family: $font-family;
+                color: $colorblack;
+                
+            }
+    &__reason3 {
+
+    }
+        &--h4 {
+            font-size: 1.8rem;
+            font-family: $font-family;
+            color: $colorblack;
+        }
+        &--p {
+            font-size: 1.8 rem;
+            font-family: $font-family;
+            color: $colorblack;
+            
+        }
+
+    &__buttonmore {
+            border-radius: 25px;
+            font-size:2rem;
+            border-color: $colororange;
+            background-color: $colororange;
+            color: $colorwhite;
+            padding: 10px 25px 10px 25px;
+            text-decoration: none;
+
+    }
+
+
 }
