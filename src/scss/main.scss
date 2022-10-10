@@ -7,6 +7,7 @@
 @import 'layout/footer';
 @import 'pages/index';*/
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,7 +19,10 @@
 :root {
 $colororange: #f26002;
 $colorblack: black;
-$titlefont:'Roboto', sans-serif;
+$font:'Roboto', sans-serif;
+$colorwhite:white;
+$cologrey: #4a4a4a;
+$colorblue:#8ccbea;
 }
 
 .header {
@@ -29,6 +33,40 @@ $titlefont:'Roboto', sans-serif;
         } 
 }
 .hero {
-    height: 100 vh;
+    height: 100vh;
+    background-image: url("./assets/images/cover.jpeg");
     
-} 
+    
+    }
+
+.lookingwindow {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+        &__littlep {
+            font-family:$font;
+            font-size: 1.4rem;
+            color: $colorblue;
+            text-transform: capitalize;
+       
+        }
+        &__h3 {
+            font-family: $font;
+            font-size: 2.4rem;
+            color:$colorblack;
+            text-transform:capitalize;
+        }
+
+        &__p {
+            font-family: $font;
+            font-size: 1.8rem;
+            color:$cologrey;
+            
+        }
+        &__buttongo {
+            border-radius: 25px;
+            border-color: $colororange;
+            color: $colororange;
+        }
+}
