@@ -6,3 +6,29 @@
 @import 'layout/header';
 @import 'layout/footer';
 @import 'pages/index';*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size:10px;
+
+}
+
+:root {
+$colororange: #f26002;
+$colorblack: black;
+$titlefont:'Roboto', sans-serif;
+}
+
+.header {
+    &__menu {
+        position: fixed;
+        margin-top: 0;
+        margin-left: 0;
+        } 
+}
+.hero {
+    height: 100 vh;
+    
+} 

@@ -6,13 +6,13 @@
     <title>Evaluación final módulo 1</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
+    
   </head>
 
   <body>
     <header class="header">
-      <div class="menu">
-        <a href="https://adalab.es/">
+      <div class="header__menu">
+        <a href="https://adalab.es/" target="_blank">
           <img
             src="./assets/images/ico-menu.svg"
             alt="menu"
@@ -20,10 +20,11 @@
         /></a>
       </div>
     </header>
-    <section class="hero">
-      <h1 class="h1">anonimous proxy</h1>
-      <p class="text">In hac habitasse platea dictumst</p>
-      <a class="scrolldown" href="./index.html#threereasons"><img src="./assets/images/ico-scroll-down.svg" alt="press to know reasons" title="go to reasons"></a>
+    <section id="hero" class="hero">
+      <img class="hero_img" src="./assets/images/cover.jpeg" alt="hero img" title="building">
+      <h1 class="hero__h1">anonimous proxy</h1>
+      <p class="hero__text">In hac habitasse platea dictumst</p>
+      <a class="hero__scrolldown" href="./index.html#threereasons"><img src="./assets/images/ico-scroll-down.svg" alt="press to know reasons" title="go to reasons"></a>
     </section>
     <section class="lookingwindow">
       <p>insomnia tips</p>
@@ -31,7 +32,7 @@
       <p>Donec accumsan, nulla ut volutpat porttitor, quam odio tempus fells, at luctus ex diam nec lectus. Vuvamus semper sodales rutrum</p>
       <button class="buttongo" type="button">go</button>
     </section>
-    <section class="threereasons">
+    <section id="threereasons" class="threereasons">
       <h3 class="h3">3 reasons to purchase</h3>
       <div class="reason1">
         <h4>Ut sed metus</h4>
@@ -47,17 +48,17 @@
       </div>
       <button class="buttonmore" type="morereasons">more reasons</button>
     </section>
-    <footer>
-      <a class="scrolldown" href="./index.html#threereasons"><img src="./assets/images/ico-arrow.svg" alt="press to know reasons" title="go to reasons"></a>
+    <footer class="footer">
+      <a class="scrollup" href="./index.html#hero"><img src="./assets/images/ico-arrow.svg" alt="go to start" title="go to start"></a>
       <p class="copy">copy 2022 we <i>corazón</i> components</p>
-      <ul class="list">
+      <ul class="footer__list">
         <li>articles</li>
         <li>books</li>
         <li>events</li>
         <li>reasons</li>
         <li>tips</li>
       </ul>
-      <ul class="list">
+      <ul class="footer__list">
         <li>twitter</li>
         <li>instagram</li>
         <li>mastodon social</li>
