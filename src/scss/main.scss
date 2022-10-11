@@ -122,12 +122,18 @@ $colorblue:#8ccbea;*/
 .lookingwindow__buttongo {
             border-radius: 25px;
             font-size:2rem;
+            border-width: 1px;
+            border-style: solid;
             border-color: #f26002;
             color: #f26002;
             padding: 10px 25px 10px 25px;
-            background-color: aqua;
             text-decoration:none;
             margin-left: 15px;
+
+.lookingwindow__buttongo:hover {
+    color:#0271bc;
+}
+            
             
 }
 
@@ -191,12 +197,14 @@ $colorblue:#8ccbea;*/
 /*FOOTER*/
 
 .footer {
+    position:relative;
     display: flex;
     flex-direction: column;
     background-color: #304268;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    padding-top: 30px;
 
     
 }
@@ -206,9 +214,13 @@ $colorblue:#8ccbea;*/
     justify-content: center;
     align-items: center;
     background-color: white;
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
+    position:absolute;
+    top:0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
 
@@ -231,6 +243,11 @@ $colorblue:#8ccbea;*/
     font-family:'Roboto', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.lovecomponents {
+    text-align: center;
+    margin-top: 15px;
 }
 
 .copy {
