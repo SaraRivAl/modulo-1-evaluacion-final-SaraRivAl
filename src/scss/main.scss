@@ -231,7 +231,7 @@ $colorblue:#8ccbea;*/
 
 .footer__nav1--ul1 {
     text-align: center;
-    
+        
 }
 
 .footer__nav2--ul2 {
@@ -257,11 +257,13 @@ $colorblue:#8ccbea;*/
 
 .copy {
     font-size: 1.4rem;
+    font-family:'Roboto', sans-serif;
     color: white;
 }
 
 .components {
     font-size: 1.4rem;
+    font-family:'Roboto', sans-serif;
     color: white;
 }
 
@@ -294,21 +296,29 @@ $colorblue:#8ccbea;*/
     }
    
     .footer {
-        position:relative;
-        display: flex;
         flex-direction: row;
-        background-color: #304268;
-        justify-content: center;
-        /*align-items: center;*/
-        gap: 15px;
+        gap: 30px;
         padding-top: 30px;
-    
-        
+        align-content: space-around;    
+            
     }
+
     .lovecomponents {
-        order:1;
-        
+        order: -1; 
+        text-align: left;      
     }
+    
+    .footer__nav1--ul1 {
+        order: 2;
+        text-align: left;
+    }
+
+    .footer__nav2--ul2 {
+        order: 3;
+        text-align: left;
+    }
+
+
 }
 
 
