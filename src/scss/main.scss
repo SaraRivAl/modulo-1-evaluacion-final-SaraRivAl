@@ -126,12 +126,14 @@ $colorblue:#8ccbea;*/
             border-style: solid;
             border-color: #f26002;
             color: #f26002;
+            background-color: white;
+            transition: background-color;
             padding: 10px 25px 10px 25px;
             text-decoration:none;
             margin-left: 15px;
 
-.lookingwindow__buttongo:hover {
-    color:#0271bc;
+.lookingwindow__buttongo :hover {
+    background-color:#0271bc;
 }
             
             
@@ -186,14 +188,17 @@ $colorblue:#8ccbea;*/
             font-size:2rem;
             border-color: #f26002;
             background-color: #f26002;
+            transition: border-radius ;
             color: white;
             padding: 10px 25px 10px 25px;
             text-decoration: none;
-            text-align: center;
-           /* margin-bottom: 20px;*/
-
+            text-align: center;  
+              
     }
 
+.threereasons__buttonmore :hover {
+            border-radius: 50%;
+}
 /*FOOTER*/
 
 .footer {
@@ -258,4 +263,69 @@ $colorblue:#8ccbea;*/
 .components {
     font-size: 1.4rem;
     color: white;
+}
+
+
+/*TABLET*/
+
+@media all and (min-width: 768px) {
+
+    .threereasons {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        row-gap: 20px;
+        column-gap: 15px;
+        background-color: #eff9ff;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+        
+    }
+
+    .threereasons__h3 {
+        grid-column: span 3;
+    }
+
+    .threereasons__buttonmore {
+        grid-column: 2/3;
+        align-self: center;
+          
+    }
+   
+    .footer {
+        position:relative;
+        display: flex;
+        flex-direction: row;
+        background-color: #304268;
+        justify-content: center;
+        /*align-items: center;*/
+        gap: 15px;
+        padding-top: 30px;
+    
+        
+    }
+    .lovecomponents {
+        order:1;
+        
+    }
+}
+
+
+@media all and (min-width: 1200px) {
+
+    .threereasons {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        row-gap: 20px;
+        column-gap: 15px;
+        background-color: #eff9ff;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+          
+    }
+
+
 }
