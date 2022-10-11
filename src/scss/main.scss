@@ -8,75 +8,8 @@
 @import 'layout/header';
 @import 'layout/page';
 @import 'layout/footer';
+@import 'layout/mediaqueries.scss';
 
 
 
 
-
-@media all and (min-width: 768px) {
-
-    .threereasons {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-rows: auto auto;
-        row-gap: 20px;
-        column-gap: 15px;
-        background-color: #eff9ff;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 30px;
-        
-    }
-
-    .threereasons__h3 {
-        grid-column: span 3;
-    }
-
-    .threereasons__buttonmore {
-        grid-column: 2/3;
-        align-self: center;
-          
-    }
-   
-    .footer {
-        flex-direction: row;
-        gap: 200px;
-        padding-top: 30px;               
-    }
-
-    .lovecomponents {
-        order: -1; 
-        text-align: left;      
-    }
-    
-    .footer__nav1--ul1 {
-        order: 2;
-        text-align: left;
-    }
-
-    .footer__nav2--ul2 {
-        order: 3;
-        text-align: left;
-    }
-
-
-}
-
-
-@media all and (min-width: 1200px) {
-
-    .threereasons {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-rows: auto auto;
-        row-gap: 20px;
-        column-gap: 15px;
-        background-color: #eff9ff;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 30px;
-          
-    }
-
-
-}

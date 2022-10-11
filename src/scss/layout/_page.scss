@@ -83,17 +83,18 @@
           border-color:$colororange;
           color:$colororange;
           background-color: white;
-          transition: background-color;
           padding: 10px 25px 10px 25px;
           text-decoration:none;
           margin-left: 15px;
+}
 
-a.lookingwindow__buttongo :hover {
-  background-color:$colordarkblue;
+.lookingwindow a:hover {
+
+  background-color:aqua;
 }
           
           
-}
+
 
 /* THREEREASONS*/
 
@@ -118,9 +119,7 @@ a.lookingwindow__buttongo :hover {
       margin-top: 45px;
       text-align: center;
   }
-.threereasons__reason {
 
-  }
   .threereasons__reason--h4 {
           font-size: 1.8rem;
           font-family: $font-familybold;
@@ -136,7 +135,7 @@ a.lookingwindow__buttongo :hover {
       }
    
 
-.threereasons__buttonmore {
+.threereasons__container--buttonmore {
           display: flex;
           justify-content: center;
           border-radius: 25px;
@@ -144,7 +143,6 @@ a.lookingwindow__buttongo :hover {
           font-size:2rem;
           border-color: $colororange;
           background-color: $colororange;
-          transition: border-radius ;
           color: white;
           padding: 10px 25px 10px 25px;
           text-decoration: none;
@@ -152,6 +150,6 @@ a.lookingwindow__buttongo :hover {
             
   }
 
-.threereasons__buttonmore :hover {
-          border-radius: 50%;
+.threereasons__container a:hover {
+          background-color: aqua;
 }
