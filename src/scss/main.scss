@@ -16,128 +16,195 @@
 
 }
 
-:root {
+
+
+/*
 $colororange: #f26002;
 $colorblack: black;
+$font-familybold: 'Roboto Slab', serif;
 $font-family: 'Roboto', sans-serif;
 $colorwhite:white;
 $cologrey: #4a4a4a;
-$colorblue:#8ccbea;
-}
+$colorblue:#8ccbea;*/
+
 
 .header {
-    &__menu {
+
+}
+
+.header__menu {
         position: fixed;
         margin-top: 0;
         margin-left: 0;
-        } 
-}
+        background-color:#0271bc ;
+        padding: 10px;
+        
+} 
+
+/* HERO*/
 .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
     height: 100vh;
-    background-image: url("./assets/images/cover.jpeg");
+    width: auto;
     
-    
-    }
+    background-image: url("../images/cover.jpeg");
+    background-size: cover;
+}
+
+.hero__h1 {
+    font-family:'Roboto Slab', serif ;
+    font-size: 4.2rem;
+    color: white;
+    text-transform:uppercase;
+    max-width: 10ch;
+    text-align: center;
+}
+
+.hero__text {
+    font-family:'Roboto', sans-serif;
+    font-size:1.9rem;
+    color:white;
+    text-align: center;
+}
+
+.hero__scrolldown {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+
+/*LOOKING WINDOW*/
 
 .lookingwindow {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 24px;
     
-        &__littlep {
-            font-family:$font-family;
-            font-size: 1.4rem;
-            color: $colorblue;
-            text-transform: capitalize;
-       
-        }
-        &__h3 {
-            font-family: $font-family;
-            font-size: 2.4rem;
-            color:$colorblack;
-            text-transform:capitalize;
-        }
+    
+}
+    
+.lookingwindow__littlep {
+    font-family:'Roboto', sans-serif;
+    font-size: 1.4rem;
+    color: #8ccbea;
+    text-transform: capitalize;
+    margin-top: 37px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+.lookingwindow__h3 {
+    font-family:'Roboto Slab', serif; 
+    font-size: 2.4rem;
+    color:black;
+    text-transform:capitalize;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
 
-        &__p {
-            font-family: $font-family;
+.lookingwindow__p {
+            font-family:'Roboto', sans-serif; 
             font-size: 1.8rem;
-            color:$cologrey;
-            
-        }
-        &__buttongo {
+            color: #4a4a4a;
+            margin-bottom: 26px;  
+            margin-left: 15px;      
+}
+
+.lookingwindow__buttongo {
             border-radius: 25px;
             font-size:2rem;
-            border-color: $colororange;
-            color: $colororange;
+            border-color: #f26002;
+            color: #f26002;
             padding: 10px 25px 10px 25px;
-            text-decoration: none;
-        }
+            background-color: aqua;
+            text-decoration:none;
+            margin-left: 15px;
+            
 }
+
+/* THREEREASONS*/
 
 .threereasons {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5,1fr)
+    grid-template-rows: repeat(5,1fr);
+    grid-template-rows: auto auto;
+    row-gap: 20px;
+    column-gap: 15px;
+    background-color: #eff9ff;
+    justify-content: center;
+    align-items: center;
+    
+}
 
-    &__h3 {
+.threereasons__h3 {
         font-size: 2.4rem;
-        font-family: $font-family;
-        color: $colorblack
+        font-family: 'Roboto Slab', serif;
+        color: black;
+        margin-top: 45px;
     }
-    &__reason1 {
+.threereasons__reason1 {
 
     }
-        &--h4 {
+    .threereasons__reason1--h4 {
             font-size: 1.8rem;
-            font-family: $font-family;
-            color: $colorblack;
+            font-family: 'Roboto Slab', serif;
+            color: black;
         }
-        &--p {
+    .threereasons__reason1--p {
             font-size: 1.8 rem;
-            font-family: $font-family;
-            color: $colorblack;
+            font-family: 'Roboto', sans-serif;
+            color: black;
             
         }
 
-    &__reason2 {
+.threereasons__reason2 {
 
         }
-            &--h4 {
+    .threereasons__reason2--h4 {
                 font-size: 1.8rem;
-                font-family: $font-family;
-                color: $colorblack;
+                font-family: 'Roboto Slab', serif;
+                color: black;
             }
-            &--p {
+    .threereasons__reason2--p {
                 font-size: 1.8 rem;
-                font-family: $font-family;
-                color: $colorblack;
-                
+                font-family: 'Roboto', sans-serif;
+                color: black;  
             }
-    &__reason3 {
+.threereasons__reason3 {
 
     }
-        &--h4 {
+
+    .threereasons__reason3--h4 {
             font-size: 1.8rem;
-            font-family: $font-family;
-            color: $colorblack;
+            font-family: 'Roboto Slab', serif;
+            color: black;
+           
         }
-        &--p {
+    .threereasons__reason3--p {
             font-size: 1.8 rem;
-            font-family: $font-family;
-            color: $colorblack;
-            
+            font-family: 'Roboto', sans-serif;
+            color: black;  
         }
 
-    &__buttonmore {
+.threereasons__buttonmore {
             border-radius: 25px;
             font-size:2rem;
-            border-color: $colororange;
-            background-color: $colororange;
-            color: $colorwhite;
+            border-color: #f26002;
+            background-color: #f26002;
+            color: white;
             padding: 10px 25px 10px 25px;
             text-decoration: none;
 
     }
 
 
-}
